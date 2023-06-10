@@ -2,8 +2,44 @@
 ANGULAR
 
 
-1.What is Angular?
+1. What is Angular?
    * A UI Framework build by Google
    * A Component-based framework for building scalabe app
    * Provided collection of libraries to cover features like Routing, Forms
 
+2. What is Frameworks?
+  * FrameWork generally contains set of libraries.
+  * You can extend the frameworks.
+  * Some example are Angualr, .net, Ionic, ExpressJS.
+
+3. What is libraries?
+  * Libraries generally perform specific operation.
+  * You can combine multiple libs to build apps.
+  * Some examples are Reacr, MomemtJS, Loadash
+
+4. Features of Angular?
+  * Template
+  * Data Binding
+  * Forms
+  * Routing 
+  * Observables
+  * PWA
+
+5. What is Typescript?
+  * A strong typed Programming language.
+  * Created and maintained by Microsoft.
+  * Superset of JavaScript
+
+6. Why Typescript?
+  * Compiles to JavaScript.
+  * Keeps your code evergreen.
+  * Supported by all major libraries and frameworks.
+
+7. What is SPA?
+  * SPA stands fro single page applications
+  * You can use modern frameworks like Angular, React, or Vue to create SPA.
+  * SPA does not make requests to server for every URL requests.
+
+8. How Angular helps in SPA?
+  * Angular has Routing functionality to create SPA.
+  * Angular also offers SSR(Server side REndering) which supports SPA.
