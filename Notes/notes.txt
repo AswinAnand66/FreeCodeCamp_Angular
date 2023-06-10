@@ -1,0 +1,9 @@
+
+ANGULAR
+
+
+1.What is Angular?
+   * A UI Framework build by Google
+   * A Component-based framework for building scalabe app
+   * Provided collection of libraries to cover features like Routing, Forms
+
