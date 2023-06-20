@@ -1,1 +1,23 @@
 <p>rooms works!</p>
+<h1>Welcome to {{ hotelname}}</h1>
+
+<p>Number of Rooms:</p>
+
+<div *ngIf="rooms.availableRooms >0">
+    RoomsList:
+    <!-- {{roomList}} -->
+    <table>
+        <tr>
+            <th>Room Number</th>
+            <th>Room Type</th>
+            <th>Room Price</th>
+            <th>Room Amenties</th>
+            <th>Check in time</th>
+        </tr>
+        <tr *ngFor="let room of roomList">
+            
+        </tr>
+    </table>
+</div>
+
+<div></div>

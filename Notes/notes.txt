@@ -43,3 +43,12 @@ ANGULAR
 8. How Angular helps in SPA?
   * Angular has Routing functionality to create SPA.
   * Angular also offers SSR(Server side REndering) which supports SPA.
+
+9. What are directives?
+   * Directives are use to change the behavior and appearance of DOM element.
+   * Directives can implement all lifecycle hooks.
+   * Directives can not have template
+
+10. Types of Directives?
+   * Structural Directives
+   * Attribute Directives
