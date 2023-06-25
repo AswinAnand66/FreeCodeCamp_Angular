@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Room, RoomList } from './rooms';
 
 @Component({
@@ -18,6 +18,8 @@ export class RoomsComponent implements OnInit {
  roomList: RoomList[] =[ ]
   
   constructor() {}
+
+
 
   ngOnInit(): void {
 
@@ -52,6 +54,7 @@ export class RoomsComponent implements OnInit {
   }
 
 
+
   selectedRoom(event:RoomList){
     this.roomList.push(event);
     console.log('event',event);
@@ -67,5 +70,6 @@ export class RoomsComponent implements OnInit {
       checkoutTime: new Date()
     }
     this.roomList.push(room);
+    this.roomList= [...this.roomList, room]
   }
 }
