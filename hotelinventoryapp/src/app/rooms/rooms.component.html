@@ -1,23 +1,16 @@
 <p>rooms works!</p>
 <h1>Welcome to {{ hotelname}}</h1>
 
+<div>
+    <button (click)="addRoom()">
+        Add Room
+    </button>
+</div>
+
 <p>Number of Rooms:</p>
 
 <div *ngIf="rooms.availableRooms >0">
-    RoomsList:
-    <!-- {{roomList}} -->
-    <table>
-        <tr>
-            <th>Room Number</th>
-            <th>Room Type</th>
-            <th>Room Price</th>
-            <th>Room Amenties</th>
-            <th>Check in time</th>
-        </tr>
-        <tr *ngFor="let room of roomList">
-            
-        </tr>
-    </table>
+    <app-rooms-list [rooms]="roomList" (selectedRoom)="selectedRoom($event)"></app-rooms-list>
 </div>
 
 <div></div>
