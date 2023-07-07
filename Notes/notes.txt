@@ -52,3 +52,8 @@ ANGULAR
 10. Types of Directives?
    * Structural Directives
    * Attribute Directives
+
+11. What is Dependency injection?
+   * Dependencies are service or objects needed by classes to perform some function.
+   * It's a design pattern.
+   * Angular has build-in Dependency Injection support.
