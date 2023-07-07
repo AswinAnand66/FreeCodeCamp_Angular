@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Room, RoomList } from './rooms';
+import { RoomsService } from './services/rooms.service';
 
 @Component({
   selector: 'app-rooms',
@@ -17,40 +18,15 @@ export class RoomsComponent implements OnInit {
 
  roomList: RoomList[] =[ ]
   
-  constructor() {}
+  constructor(
+    private roomsService: RoomsService
+  ) {}
 
 
 
   ngOnInit(): void {
 
-    this.roomList =[
-
-      {
-        roomType:'Deluxe Room',
-        amenities: 'Air conditioner',
-        price: 500,
-        photos: 'https://google.com',
-        checkinTime: new Date(),
-        checkoutTime: new Date()
-      },
-      {
-        roomType:'small Room',
-        amenities: 'Air conditioner',
-        price: 300,
-        photos: 'https://google.com',
-        checkinTime: new Date(),
-        checkoutTime: new Date()
-      },
-      {
-        roomType:'private Room',
-        amenities: 'Air conditioner',
-        price: 1000,
-        photos: 'https://google.com',
-        checkinTime: new Date(),
-        checkoutTime: new Date()
-      },
-     ]
-      
+      this.roomList = this.roomsService.getRooms()
   }
 
 
